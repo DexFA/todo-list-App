@@ -1,0 +1,32 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="px-4 py-5 my-5 text-center">
+      
+        <% if (locals.today) { %>
+            <h1 class="display-5 fw-bold main-title">
+                <%= today %>
+            </h1>
+        <% } %>
+      <!-- Form -->
+      <div class="col-lg-6 mx-auto text-center">
+        <form action="todo-today" method="post" class="card p-1 w-50 mx-auto">
+            <div class="input-group">
+                <input type="text" name="todo" placeholder="Add todo" class="form-control">
+                <input type="submit" name="submit" value="Add" class="btn btn-secondary">
+            </div> 
+        </form>
+        <div class="todoItem-container">
+            
+            <% if(locals.todoItem){ %>
+                <% todoItem.forEach(function(item){ %>
+                    <li>
+                        <input type="checkbox" value="strikethrough" class="checkbox">
+                        <label for="strikethrough"><%= item %></label>
+                    </li>
+                <% }) %>
+            <% } %>
+        </div>
+      </div>
+    </div>
+        
+<%- include("partials/footer.ejs") %>

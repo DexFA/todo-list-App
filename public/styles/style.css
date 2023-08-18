@@ -1,0 +1,109 @@
+body {
+	background: #0b1416;
+	font-family: "Poppins", sans-serif;
+	color: white;
+}
+
+header ul {
+	display: flex;
+	gap: 20px;
+}
+
+header ul li {
+	list-style-type: none;
+}
+
+header ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+input:checked + label {
+	text-decoration: line-through;
+	color: #013f4db6;
+}
+
+.form-control::placeholder {
+	color: gray;
+}
+
+.card {
+	background-color: #223237;
+	border-radius: 50px;
+}
+
+input.form-control {
+	background-color: #223237;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+
+input.btn-secondary {
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+h1 {
+	color: white;
+}
+
+li {
+	list-style-type: none;
+	font-size: 24px;
+	color: rgb(196, 196, 196);
+	text-align: left;
+	/* border-bottom: solid 1px #22323794; */
+	margin-bottom: 10px;
+}
+
+/* Footer features list */
+dl,
+ol,
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+}
+
+.feature-list li {
+	color: #6c757d;
+	font-size: 16px;
+	list-style-type: disc;
+}
+
+.todoItem-container {
+	display: grid;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+label {
+	margin-left: 20px;
+}
+
+.checkmark {
+	background-color: #223237;
+}
+
+/* Responsive Rules */
+
+@media (max-width: 767.98px) {
+	body > div {
+		min-width: 100% !important;
+	}
+
+	.nav {
+		margin-top: 20px;
+	}
+
+	.card {
+		min-width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	body > div {
+		min-width: 50% !important;
+	}
+}
