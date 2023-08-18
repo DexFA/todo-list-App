@@ -10,8 +10,10 @@
                 <input type="submit" name="submit" value="Add" class="btn btn-secondary">
             </div> 
         </form>
+        <!-- Form Ending -->
+
         <div class="todoItem-container">
-            
+            <!-- Todo Tasks -->
             <% if(locals.todoItem){ %>
                 <% todoItem.forEach(function(item){ %>
                     <li>
@@ -20,6 +22,8 @@
                     </li>
                 <% }) %>
             <% } %>
+            <!-- Todo Task ending -->
+
         </div>
       </div>
     </div>    

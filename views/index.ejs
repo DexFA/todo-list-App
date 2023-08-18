@@ -1,7 +1,7 @@
 <%- include("partials/header.ejs") %>
 
     <div class="px-4 py-5 my-5 text-center">
-      
+        <!-- Display Todays Day and Month -->
         <% if (locals.today) { %>
             <h1 class="display-5 fw-bold main-title">
                 <%= today %>
@@ -15,8 +15,8 @@
                 <input type="submit" name="submit" value="Add" class="btn btn-secondary">
             </div> 
         </form>
+        <!-- Form Ending -->
         <div class="todoItem-container">
-            
             <% if(locals.todoItem){ %>
                 <% todoItem.forEach(function(item){ %>
                     <li>

@@ -22,12 +22,16 @@ const days = [
 ];
 const d = new Date();
 const dayName = days[d.getDay()];
+
+// display month as a string
 const nameOfMonth = new Intl.DateTimeFormat("en-US", {
 	month: "long",
 }).format(d);
 
+// display day and date
 const today = `${dayName}, ${nameOfMonth} ${d.getDate()}`;
 
+// Routes
 app.get("/", (req, res) => {
 	res.render("index.ejs", {
 		today: today,
