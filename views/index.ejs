@@ -3,7 +3,7 @@
     <div class="px-4 py-5 my-5 text-center">
         <!-- Display Todays Day and Month -->
         <% if (locals.today) { %>
-            <h1 class="display-5 fw-bold main-title">
+            <h1 class="display-5 fw-bold mb-5 main-title">
                 <%= today %>
             </h1>
         <% } %>
@@ -11,8 +11,8 @@
       <div class="col-lg-6 mx-auto text-center">
         <form action="todo-today" method="post" class="card p-1 w-50 mx-auto">
             <div class="input-group">
-                <input type="text" name="todo" placeholder="Add todo" class="form-control">
-                <input type="submit" name="submit" value="Add" class="btn btn-secondary">
+                <input type="text" name="todo" placeholder="Your next to-do" class="form-control">
+                <input type="submit" name="submit" value="Add" class="btn btn-secondary botton1">
             </div> 
         </form>
         <!-- Form Ending -->

@@ -36,11 +36,22 @@ input.form-control {
 	background-color: #223237;
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 50px;
+	border: none;
 }
 
-input.btn-secondary {
+.input-group
+	> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+		.valid-feedback
+	):not(.invalid-tooltip):not(.invalid-feedback) {
 	border-top-right-radius: 50px;
 	border-bottom-right-radius: 50px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+
+.botton1 {
+	background-color: #00000000;
+	border: none;
 }
 
 h1 {
@@ -66,8 +77,16 @@ ul {
 	justify-content: center;
 }
 
+.footer-text {
+	color: #d1a66a;
+}
+
+li::marker {
+	color: #d1a66a;
+}
+
 .feature-list li {
-	color: #6c757d;
+	color: rgb(196, 196, 196);
 	font-size: 16px;
 	list-style-type: disc;
 }
