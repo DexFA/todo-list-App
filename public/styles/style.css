@@ -37,6 +37,22 @@ input.form-control {
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 50px;
 	border: none;
+	margin-right: 6px;
+}
+
+.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n + 3),
+.input-group:not(.has-validation)
+	> .form-floating:not(:last-child)
+	> .form-control,
+.input-group:not(.has-validation)
+	> .form-floating:not(:last-child)
+	> .form-select,
+.input-group:not(.has-validation)
+	> :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(
+		.form-floating
+	) {
+	border-radius: 50px;
+	box-shadow: none;
 }
 
 .input-group
@@ -52,6 +68,10 @@ input.form-control {
 .botton1 {
 	background-color: #00000000;
 	border: none;
+}
+
+.botton1:hover {
+	background-color: #d1a66a;
 }
 
 h1 {
@@ -77,8 +97,12 @@ ul {
 	justify-content: center;
 }
 
-.footer-text {
+.description {
 	color: #d1a66a;
+}
+
+.tech-title {
+	margin: 0;
 }
 
 li::marker {
@@ -105,8 +129,53 @@ label {
 	background-color: #223237;
 }
 
-/* Responsive Rules */
+/* Animations */
+/* Navbar Animation */
+.cover-container {
+	position: relative;
+	top: -80px;
+	opacity: 1;
+	animation: slidedown 1s forwards;
+	animation-delay: 1s;
+}
 
+@keyframes slidedown {
+	from {
+		top: -80px;
+		opacity: 0;
+	}
+	to {
+		top: 0px;
+		opacity: 1;
+	}
+}
+
+/* Main Form Animation */
+.main-container {
+	opacity: 1;
+	/* Add animation properties */
+	animation: fadeIn 1s ease-in;
+}
+
+.main-footer-description {
+	opacity: 0;
+	animation: fadeIn 1s ease-in forwards;
+	animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+/* End of animations */
+
+/* Responsive Rules */
 @media (max-width: 767.98px) {
 	body > div {
 		min-width: 100% !important;
