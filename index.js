@@ -2,7 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 
 const app = express();
-const port = 3001;
+const port = 3000;
 
 const todo = [];
 const todoWork = [];
